@@ -165,7 +165,7 @@ async def next_page(bot, query):
             ],
         )
     btn.insert(0, [
-        InlineKeyboardButton("🔮 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ᴛʜɪs ʟɪɴᴋ 🔮", url=HOW_DWLD_LINK)
+        InlineKeyboardButton("💢 𝗛𝗢𝗪 𝗧𝗢 𝗢𝗣𝗘𝗡 𝗧𝗛𝗜𝗦 𝗟𝗜𝗡𝗞 💢", url=HOW_DWLD_LINK)
     ])
     try:
         await query.edit_message_reply_markup(
@@ -982,7 +982,7 @@ async def auto_filter(client, msg, spoll=False):
             )
 
     btn.insert(0, [
-        InlineKeyboardButton("🔮 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ᴛʜɪs ʟɪɴᴋ 🔮", url=HOW_DWLD_LINK)
+        InlineKeyboardButton("💢 𝗛𝗢𝗪 𝗧𝗢 𝗢𝗣𝗘𝗡 𝗧𝗛𝗜𝗦 𝗟𝗜𝗡𝗞 💢", url=HOW_DWLD_LINK)
     ])
 
     if offset != "":
