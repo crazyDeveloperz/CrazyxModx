@@ -31,7 +31,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', ' -1001874085827').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5989342270').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('-1001862060552')
+auth_channel = environ.get('')
 auth_grp = environ.get('')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -42,9 +42,9 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Channel Button Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Rdx_hd_onlinee')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Technical_rakesh_01')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://telegram.dog/TR_TG_47')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movieflix_h')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Movieflix_offical_watchnow')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/crezyDeveloperSupport')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
