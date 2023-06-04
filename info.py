@@ -51,7 +51,7 @@ MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001856507861))
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL',  -1001874085827))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', '')
-HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/dulink_file_open/53')
+HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/pdisk_pro_link_open/18')
 
 # Log Channels
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001905107952))
@@ -85,8 +85,8 @@ SPL_DELETE_TIME = int(environ.get('SPL_DELETE_TIME', 10))
 
 # URL SHORTNER
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'omegalinks.in')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'b923e4f6561e6157295c9654d135b5b1e3384b18')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'paisakamalo.in')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '1d17334954c032131a737fd44f06bb2e1d3c2988')
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
