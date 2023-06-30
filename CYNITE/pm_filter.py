@@ -517,14 +517,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('〆 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 〆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
-                    InlineKeyboardButton("🥂 ᴜᴘᴅᴀᴛᴇs", callback_data='smrati')
+                    InlineKeyboardButton("🥂 ᴜᴘᴅᴀᴛᴇs", callback_data='smrati'),
                     InlineKeyboardButton('👨‍💻 ᴅᴇᴠ​', callback_data='owner_info')
                   ],[
                     InlineKeyboardButton('🍹 ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ', callback_data='about'),
+                    InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ', callback_data='about')
                   ],[
-                    InlineKeyboardButton('🥶 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ', url="https://t.me/only_botz")
-                  ],[InlineKeyboardButton('🥵 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ', url="https://t.me/movieflix_h")
+                    InlineKeyboardButton('🥶 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ', url="https://t.me/snfilmy")
+                  ],[
+                    InlineKeyboardButton('🥵 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ', url="https://t.me/snmovierequestgroup")
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
