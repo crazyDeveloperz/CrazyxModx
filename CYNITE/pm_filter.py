@@ -165,7 +165,7 @@ async def next_page(bot, query):
             ],
         )
     btn.insert(0, [
-        InlineKeyboardButton("💢 𝗛𝗢𝗪 𝗧𝗢 𝗢𝗣𝗘𝗡 𝗧𝗛𝗜𝗦 𝗟𝗜𝗡𝗞 💢", url=HOW_DWLD_LINK)
+        InlineKeyboardButton("💢 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ᴛʜɪꜱ ʟɪɴᴋ 💢", url=HOW_DWLD_LINK)
     ])
     try:
         await query.edit_message_reply_markup(
@@ -431,8 +431,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('❇️𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿📢', url=GRP_LNK),
-                          InlineKeyboardButton('🙋𝚄𝙿𝙳𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻📢', url=CHNL_LNK)
+                          InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 📢', url=GRP_LNK),
+                          InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ 🥤', url=CHNL_LNK)
                        ]
                         ]
                     )
@@ -476,8 +476,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('❇️𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿📢', url=GRP_LNK),
-                  InlineKeyboardButton('🙋𝚄𝙿𝙳𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻📢', url=CHNL_LNK)
+                  InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 📢', url=GRP_LNK),
+                  InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ 🥤', url=CHNL_LNK)
                ]
                 ]
             )
@@ -515,13 +515,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('ᗩᗪᗪ ᗰ𝐄 𝐓𝐎 𝐘𝐎ᑌᖇ 𝐆ᖇ𝐎ᑌᑭ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('〆 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 〆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
-                    InlineKeyboardButton('♻️ĦɆŁꝐ♻️', callback_data='help'),
-                    InlineKeyboardButton('♻️ȺɃꝊɄȾ♻️', callback_data='about'),
+                    InlineKeyboardButton("🥂 ᴜᴘᴅᴀᴛᴇs", callback_data='smrati')
+                    InlineKeyboardButton('👨‍💻 ᴅᴇᴠ​', callback_data='owner_info')
                   ],[
-                    InlineKeyboardButton('♻️ᒍOIᑎ Oᑌᖇ ᑕᕼᗩᑎᑎEᒪ♻️', url="https://t.me/only_botz")
-                  ],[InlineKeyboardButton('♻️ᒍOIᑎ Oᑌᖇ GᖇOᑌᑭ♻️', url="https://t.me/movieflix_h")
+                    InlineKeyboardButton('🍹 ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ', callback_data='about'),
+                  ],[
+                    InlineKeyboardButton('🥶 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ', url="https://t.me/only_botz")
+                  ],[InlineKeyboardButton('🥵 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ', url="https://t.me/movieflix_h")
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -543,7 +546,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ɪᴍᴅʙ', callback_data='cynite_imdb'),
             InlineKeyboardButton('ᴍɪsᴄ', callback_data='cynite_misc')
         ], [
-            InlineKeyboardButton('ɢᴏᴛ ᴛᴏ ʜᴏᴍᴇ', callback_data='start')
+            InlineKeyboardButton('⇍ ɢᴏᴛ ᴛᴏ ʜᴏᴍᴇ ⇏', callback_data='start')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -552,14 +555,47 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    elif query.data == "smrati":
+        buttons = [[
+            InlineKeyboardButton('🍂 ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ', url='t.me/crazybotz'),
+            InlineKeyboardButton('🍄 ᴏᴛᴛ ᴜᴘᴅᴀᴛᴇ', url='t.me/snfilmy')
+            ],[
+            InlineKeyboardButton('©️ ᴀʙᴏᴜᴛ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ©️', callback_data='amit')
+            ],[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('ᴄʟᴏsᴇ ⊝', callback_data='close_data')
+        ]]
+
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.SHIV_TXT.format(temp.B_LINK),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "amit":
+        buttons = [[
+            InlineKeyboardButton('ʜɪɴᴅɪ', callback_data='smrat'),
+            InlineKeyboardButton('ᴇɴɢʟɪsʜ',callback_data='english')
+            ],[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('ᴄʟᴏꜱᴇ ⊝', callback_data='close_data')
+        ]]
+        
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.SHIVN_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('♻️𝚁𝙴𝙿𝙾𝚁𝚃 𝙱𝚄𝙶𝚂 & 𝙵𝙴𝙴𝙳𝙱𝙰𝙲𝙺♻️', url=GRP_LNK)
+            InlineKeyboardButton('💌 ʀᴇᴘᴏʀᴛ ʙᴜɢꜱ & ꜰᴇᴇᴅʙᴀᴄᴋ', url=GRP_LNK)
         ],[
-            InlineKeyboardButton('♻️ᗷᗩᑕKᑌᑭ ᑕᕼᗩᑎᑎEᒪ♻️', url="https://t.me/Movieflix_offical_watchnow")
+            InlineKeyboardButton('👻 ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ', url="https://t.me/snfilmy")
         ],[
-            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('ᴄʟᴏsᴇ ⊝', callback_data='close_data')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -568,6 +604,43 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+
+    elif query.data == "smrat":
+        buttons = [[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='amit')
+        ]]
+        
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CRAZY_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "english":
+        buttons = [[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='amit')
+        ]]
+        
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.EARN2_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "owner_info":
+        buttons = [[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('✧ ᴄᴏɴᴛᴀᴄᴛ​', url='t.me/heartlesssn')
+        ]]
+        
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.OWNER_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        
     elif query.data == "source":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about')
@@ -982,7 +1055,7 @@ async def auto_filter(client, msg, spoll=False):
             )
 
     btn.insert(0, [
-        InlineKeyboardButton("💢 𝗛𝗢𝗪 𝗧𝗢 𝗢𝗣𝗘𝗡 𝗧𝗛𝗜𝗦 𝗟𝗜𝗡𝗞 💢", url=HOW_DWLD_LINK)
+        InlineKeyboardButton("💢 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ᴛʜɪꜱ ʟɪɴᴋ 💢", url=HOW_DWLD_LINK)
     ])
 
     if offset != "":
