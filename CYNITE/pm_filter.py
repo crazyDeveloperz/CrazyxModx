@@ -525,7 +525,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   ],[
                     InlineKeyboardButton('🥶 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ', url="https://t.me/snfilmy")
                   ],[
-                    InlineKeyboardButton('🥵 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ', url="https://t.me/snmovierequestgroup")
+                    InlineKeyboardButton('🥵 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ', url="https://t.me/smovierequestgroup")
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -793,10 +793,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "cynite_cnl":
             cnlbtn = [[
-                      InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/Movieflix_offical_watchnow')
+                      InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/snfilmy')
                      ], [
-                      InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/Movieflix_offical_watchnow'),
-                      InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/only_botz')
+                      InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/crazysupportz'),
+                      InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/crazybotz')
                      ], [
                       InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
                      ]]
@@ -1256,7 +1256,7 @@ async def advantage_spell_chok(msg):
         ),
         InlineKeyboardButton(
             text="ʀᴇᴘᴏʀᴛ ʜᴇʀᴇ",
-            url="https://www.telegram.dog/TG_TR_support_bot"
+            url="https://www.telegram.dog/crazysupportz"
         )
     ],[
         InlineKeyboardButton(
