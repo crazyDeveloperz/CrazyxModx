@@ -37,21 +37,21 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hegodal811:yHrW15yCCS5RS2bN@cluster0.br5wbbx.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Channel Button Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movieflix_h')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Movieflix_offical_watchnow')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/crezyDeveloperSupport')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/snmovierequestgroup')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/snfilmy')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/crazysupportz')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001856507861))
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL',  -1001874085827))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', '')
-HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/pdisk_pro_link_open/18')
+HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/jarrydow')
 
 # Log Channels
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001905107952))
@@ -85,8 +85,8 @@ SPL_DELETE_TIME = int(environ.get('SPL_DELETE_TIME', 10))
 
 # URL SHORTNER
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'paisakamalo.in')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '1d17334954c032131a737fd44f06bb2e1d3c2988')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'onepagelink.in')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '78b56106966bf889dde7002dc2a100b0e9f5c677')
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
