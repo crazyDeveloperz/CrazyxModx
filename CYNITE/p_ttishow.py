@@ -28,7 +28,7 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('🫂𝚂𝙰𝙿𝙿𝙾𝚁𝚃🎉', url=f'https://t.me/{SUPPORT_CHAT}')
+                InlineKeyboardButton('​💥 🇸​​🇺​​🇵​​🇵​​🇴​​🇷​​🇹​', url="https://t.me/crazysupportz")
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -44,7 +44,7 @@ async def save_group(bot, message):
             return
         buttons = [[
                     InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url=CHNL_LNK),
-                    InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʜᴇʀᴇ', url=f"https://t.me/Rdx_hd_onlinee")
+                    InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʜᴇʀᴇ', url=f"https://t.me/crazysupportz")
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -56,7 +56,7 @@ async def save_group(bot, message):
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton("ɢʀᴏᴜᴘ📌", url="https://t.me/Cynite_movies_group12")
+                InlineKeyboardButton("ɢʀᴏᴜᴘ📌", url="https://t.me/smovierequestgroup")
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
@@ -81,7 +81,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('🫂𝚂𝙰𝙿𝙿𝙾𝚁𝚃🎉', url=f'https://t.me/{SUPPORT_CHAT}')
+            InlineKeyboardButton('💥 🇸​​🇺​​🇵​​🇵​​🇴​​🇷​​🇹', url="https://t.me/crazysupportz")
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
@@ -120,7 +120,7 @@ async def disable_chat(bot, message):
     await message.reply('Chat Successfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('🫂𝚂𝙰𝙿𝙿𝙾𝚁𝚃🎉', url=f'https://t.me/{SUPPORT_CHAT}')
+            InlineKeyboardButton('💥 🇸​​🇺​​🇵​​🇵​​🇴​​🇷​​🇹', url="https://t.me/crazysupportz")
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
