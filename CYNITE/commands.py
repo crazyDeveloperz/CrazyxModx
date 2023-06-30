@@ -22,10 +22,15 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('〆 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 〆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
-                    InlineKeyboardButton('⚡ UᎮDΛTΞS ⚡', url='https://t.me/movieflix_h'),
-                    InlineKeyboardButton('📡 SUᎮᎮԾᏒϮ 📽', url='https://t.me/crezyDeveloperSupport')
+                    InlineKeyboardButton("🥂 ᴜᴘᴅᴀᴛᴇs", callback_data='smrati'),
+                    InlineKeyboardButton('👨‍💻 ᴅᴇᴠ​', callback_data='owner_info')
+                  ],[
+                    InlineKeyboardButton('🍹 ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ', callback_data='about')
+                  ],[
+                    InlineKeyboardButton('🥶 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ', url="https://t.me/snfilmy")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         kd = await message.reply_photo(
@@ -45,12 +50,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('〆 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 〆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
-                    InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-                    InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about'),
+                    InlineKeyboardButton("🥂 ᴜᴘᴅᴀᴛᴇs", callback_data='smrati'),
+                    InlineKeyboardButton('👨‍💻 ᴅᴇᴠ​', callback_data='owner_info')
                   ],[
-                    InlineKeyboardButton('🔥 JOIИ UᎮDΛTΞS CHΛИИΞL 🔥', url="https://t.me/movieflix_h")
+                    InlineKeyboardButton('🍹 ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ', callback_data='about')
+                  ],[
+                    InlineKeyboardButton('🥶 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ', url="https://t.me/snfilmy")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -92,12 +100,15 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('〆 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 〆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
-                    InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-                    InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about'),
+                    InlineKeyboardButton("🥂 ᴜᴘᴅᴀᴛᴇs", callback_data='smrati'),
+                    InlineKeyboardButton('👨‍💻 ᴅᴇᴠ​', callback_data='owner_info')
                   ],[
-                    InlineKeyboardButton('🔥 JOIИ UᎮDΛTΞS CHΛИИΞL 🔥', url="https://t.me/movieflix_h")
+                    InlineKeyboardButton('🍹 ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ', callback_data='about')
+                  ],[
+                    InlineKeyboardButton('🥶 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ', url="https://t.me/snfilmy")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -149,8 +160,8 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('📡 SUᎮᎮԾᏒϮ GᏒԾUᎮ 📽', url=GRP_LNK),
-                          InlineKeyboardButton('🔥 UᎮDΛTΞS CHΛИИΞL 🔥', url=CHNL_LNK)
+                          InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 📢', url=GRP_LNK),
+                          InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ 🥤', url=CHNL_LNK)
                        ]
                         ]
                     )
@@ -166,8 +177,8 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('📡 SUᎮᎮԾᏒϮ GᏒԾUᎮ 📽', url=GRP_LNK),
-                          InlineKeyboardButton('🔥 UᎮDΛTΞS CHΛИИΞL 🔥', url=CHNL_LNK)
+                          InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 📢', url=GRP_LNK),
+                          InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ 🥤', url=CHNL_LNK)
                        ]
                         ]
                     )
@@ -235,8 +246,8 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('📡 SUᎮᎮԾᏒϮ GᏒԾUᎮ 📽', url=GRP_LNK),
-                      InlineKeyboardButton('🔥 UᎮDΛTΞS CHΛИИΞL 🔥', url=CHNL_LNK)
+                      InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 📢', url=GRP_LNK),
+                      InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ 🥤', url=CHNL_LNK)
                    ]
                     ]
                 )
@@ -276,8 +287,8 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('📡 SUᎮᎮԾᏒϮ GᏒԾUᎮ 📽', url=GRP_LNK),
-              InlineKeyboardButton('🔥 UᎮDΛTΞS CHΛИИΞL 🔥', url=CHNL_LNK)
+              InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 📢', url=GRP_LNK),
+              InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ 🥤', url=CHNL_LNK)
            ]
             ]
         )
