@@ -14,31 +14,31 @@ def is_enabled(value, default):
 # Bot information
 PORT = environ.get("PORT", "8080")
 SESSION = environ.get('SESSION', 'Movieprovider')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '27499182'))
+API_HASH = environ.get('API_HASH', '9c58142ef6abed28808a50e3e983c39c')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6238037156:AAE5yNZdzOzqOMHhCkeJkr2GnyXVhmQDzTQ")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/23fd6057f6ce013284277.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/1362dcf283f7e9b833e44.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/363a1d552aac5aabc46d7.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/b60d2facc538ad82ad22d.jpg")
 NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/d25f2895cb100c5c1c6f4.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5989342270').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6249148586').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', ' -1001874085827').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5989342270').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('')
+auth_channel = environ.get('-1001600537706')
 auth_grp = environ.get('')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://CrazyxModx:CrazyxModx@cluster0.3m0ekqp.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -55,7 +55,7 @@ FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', '')
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://youtu.be/2biEhc5b1pY')
 
 # Log Channels
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001905107952))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001904518898))
 RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001905107952))
 
 # Bot Options
