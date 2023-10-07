@@ -42,7 +42,7 @@ async def pm_text(bot, message):
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
          text="<b>𝙃𝙚𝙮 𝘿𝙪𝙙𝙚 😍 ,\n\n𝙃𝙚𝙧𝙚 𝙄𝙨 𝙢𝙮 𝙋𝙧𝙚𝙢𝙞𝙪𝙢 𝘼𝙥𝙠 𝙎𝙚𝙘𝙩𝙞𝙤𝙣</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💠 𝗣𝗿𝗲𝗺𝗶𝘂𝗶𝗺 𝗔𝗽𝗸 💠", url=f"t.me/smovierequestgroup")]])
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💠 𝗣𝗿𝗲𝗺𝗶𝘂𝗶𝗺 𝗔𝗽𝗸 💠", url=f"t.me/CrazyXModX")]])
     )
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
